@@ -237,10 +237,12 @@ a:hover {
 
  .nav-links a {
     font-size: 0.9rem;
-  }
-}
+ }
 
-.nav-logo {
+ .nav-logo {
     height: 10px;
     width: auto;
 }
+}
+
+
