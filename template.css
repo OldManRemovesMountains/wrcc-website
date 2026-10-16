@@ -11,7 +11,7 @@
   --bg-light: #ffffff;         /*body background*/
   --text-main: #1e293b;        /*text colour*/
   --text-muted: #64748b;       /*soft text profile*/
-  --border-clean: #e2e8f0;     /*hairline split for feed*/
+  --border-clean:  #4443b8;     /*hairline divider*/
 
   /*Text structure */
   --reading-width: 1250px;       
@@ -218,7 +218,7 @@ a:hover {
   }
 
 .nav-brand {
-    font-size: 1.15rem;   
+    font-size: 1 rem;   
     letter-spacing: -0.01em; 
     text-align: center;
 }
