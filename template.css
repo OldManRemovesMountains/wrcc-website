@@ -111,6 +111,12 @@ a:hover {
   color: var(--primary-hover);
 }
 
+.nav-logo {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
 /*Hero banner*/
 .hero-stack {
   background-color: var(--bg-dark);
@@ -218,7 +224,7 @@ a:hover {
   }
 
 .nav-brand {
-    font-size: 0.5rem;   
+    font-size: 0.7rem;   
     letter-spacing: -0.01em; 
     text-align: center;
 }
