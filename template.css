@@ -218,13 +218,13 @@ a:hover {
   }
 
 .nav-brand {
-    font-size: 1 rem;   
+    font-size: 1rem;   
     letter-spacing: -0.01em; 
     text-align: center;
 }
 
 .nav-links {
-    gap: 1.25rem;
+    gap: 1.50rem;
 }
 
  .nav-links a {
