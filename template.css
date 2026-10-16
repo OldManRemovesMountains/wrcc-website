@@ -96,6 +96,7 @@ a:hover {
   color: var(--primary-color);
 }
 
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -220,27 +221,41 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     display: flex;
-    gap: 0.6rem;
+    gap: 1.25rem;
     height: auto;          
     padding: 1.25rem 0;   
   }
 
 .nav-brand {
-    font-size: 0.7rem;   
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: clamp(0.72rem, 3.2vw, 0.9rem);  
     letter-spacing: -0.01em; 
     text-align: center;
+    gap: 0.4rem;
+    max-width: none !important;
+    white-space: nowrap !important;
+}
+
+.nav-brand span {
+    display: inline;
+    font-weight: 900;
 }
 
 .nav-links {
-    gap: 1.50rem;
+    gap: 2rem;
+    justify-content: center;
 }
 
  .nav-links a {
-    font-size: 0.9rem;
+     font-size: 1rem;
+     letter-spacing: 0.05em;
  }
 
  .nav-logo {
-    height: 10px;
+    height: 25px;
     width: auto;
 }
 }
