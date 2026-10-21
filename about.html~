@@ -1,0 +1,37 @@
+<!--Developed by Iris Tapley, October 15th 2026. If, while altering, any questions arise, please contact me at will!-->
+<!--This document was made with the intention of popping up a lightweight & portable WRCC website while complying to modern web style conventions.-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> WRCC </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="site-header">
+      <div class="stack-container">
+	<div class ="nav-wrapper">
+ 	  <a href="#" class="nav-logo"></a>
+	  <ul class ="nav-links">
+	    <li><a href ="#about">About</a></li>
+	    <li><a href="#actions">Actions</a></li>
+	    <li><a href="#join">Join</a></li>
+	  </ul>
+	</div>
+      </div>
+    </header>
+
+<!-- FOOTER -->
+    <footer>
+      <div class="stack-container">
+	<div class="site-footer">
+      <p>&copy; 2026 Waterloo Region Community Coalition</p>
+      <a href="https://www.instagram.com/communitycoalitionwr/"><img src="media/socials/instagram.png" height=50px></img></a>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
