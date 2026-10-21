@@ -106,7 +106,7 @@ a:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: background-image 0.9s ease;
+    transition: background-image 0.2s ease;
 }
 
 .nav-logo:hover {
