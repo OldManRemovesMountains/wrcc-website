@@ -5,10 +5,10 @@
 /*Global variables*/
 :root {
   /*Colour palette*/
-  --primary-color: #4443b8;     
-  --primary-hover: #a62402;    /*hyperlink hover*/
-  --bg-dark: #0f172a;          /*banner background*/
-  --bg-light: #ffffff;         /*body background*/
+  --primary-color: #31377e;     
+  --primary-hover: #b30800;    /*hyperlink hover*/
+  --bg-dark: #333333;          /*banner background*/
+  --bg-light: #f7f7f7;         /*body background*/
   --text-main: #1e293b;        /*text colour*/
   --text-muted: #64748b;       /*soft text profile*/
   --border-clean:  #4443b8;     /*hairline divider*/
@@ -70,8 +70,8 @@ a:hover {
 
 /*Navigation bar*/
 .site-header {
-  background-color: #f2bc66;
-  border-bottom: 1px solid var(--border-clean);
+  background-color: #fbb850;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .nav-wrapper {
@@ -80,22 +80,6 @@ a:hover {
   align-items: center;
   height: 75px;
 }
-
-.nav-brand {
-  display: flex;
-  font-size: 1.25rem;
-  gap: 0.6rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: -0.03em;
-  color: #000000;
-  text-decoration: none;
-}
-
-.nav-brand span {
-  color: var(--primary-color);
-}
-
 
 .nav-links {
   display: flex;
@@ -115,9 +99,20 @@ a:hover {
 }
 
 .nav-logo {
-    height: 40px;
-    width: auto;
+    display: inline-block;
+    height: 100px;
+    width: 143px;
+    background-image: url('media/WRCC-Logos/BlackTransparent@300x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.9s ease;
 }
+
+.nav-logo:hover {
+    background-image: url('media/WRCC-Logos/MainOutlined@300x.png');
+}
+
 
 /*Hero banner*/
 .hero-stack {
@@ -185,13 +180,23 @@ a:hover {
 }
 
 .item-title a:hover {
-  color: var(--primary-color);
+  color: var(--primary-hover);
 }
 
 .item-excerpt {
   font-size: var(--fs-body);
   color: var(--text-main);
 }
+
+/*Footer*/
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 
 /*Heavy button*/
 .btn-action {
@@ -221,28 +226,10 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     display: flex;
-    gap: 1.25rem;
-    height: auto;          
-    padding: 1.25rem 0;   
+    gap: 1rem;
+    height: 150px;          
+    padding: 0.2rem 0;   
   }
-
-.nav-brand {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-size: clamp(0.72rem, 3.2vw, 0.9rem);  
-    letter-spacing: -0.01em; 
-    text-align: center;
-    gap: 0.4rem;
-    max-width: none !important;
-    white-space: nowrap !important;
-}
-
-.nav-brand span {
-    display: inline;
-    font-weight: 900;
-}
 
 .nav-links {
     gap: 2rem;
@@ -254,10 +241,6 @@ a:hover {
      letter-spacing: 0.05em;
  }
 
- .nav-logo {
-    height: 25px;
-    width: auto;
-}
 }
 
 
