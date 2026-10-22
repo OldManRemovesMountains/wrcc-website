@@ -1,6 +1,13 @@
 /*Developed by Iris Tapley, October 15th 2026. If, while altering, any questions arise, please contact me at will!*/
 /*This document was made with the intention of popping up a lightweight & portable WRCC website while complying to modern web style conventions.*/
 
+/*Font query*/
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('media/fonts/LibreFranklin-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 /*Global variables*/
 :root {
@@ -15,7 +22,7 @@
 
   /*Text structure */
   --reading-width: 1250px;       
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-sans: "Libre Franklin", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   
   --fs-hero-title: clamp(2.25rem, 5vw, 3.5rem);
