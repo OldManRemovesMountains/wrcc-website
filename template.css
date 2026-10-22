@@ -102,7 +102,7 @@ a:hover {
     display: inline-block;
     height: 100px;
     width: 143px;
-    background-image: url('media/WRCC-Logos/BlackTransparent@300x.png');
+    background-image: url('media/WRCC-Logos/BlackTransparentSmall.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -110,7 +110,7 @@ a:hover {
 }
 
 .nav-logo:hover {
-    background-image: url('media/WRCC-Logos/MainOutlined@300x.png');
+    background-image: url('media/WRCC-Logos/MainOutlinedSmall.png');
     height: 100px;
     width: 143px;
 }
