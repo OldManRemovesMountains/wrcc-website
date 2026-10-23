@@ -9,6 +9,7 @@
   font-style: normal;
 }
 
+
 /*Global variables*/
 :root {
   /*Colour palette*/
@@ -30,6 +31,7 @@
   --fs-body: 1.125rem;         
 }
 
+
 /*Setting and forcing styles*/
 *, *::before, *::after {
   box-sizing: border-box;
@@ -45,6 +47,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+
 /*Headers*/
 h1, h2, h3 {
   color: #000000;
@@ -52,6 +55,7 @@ h1, h2, h3 {
   line-height: 1.15;
   letter-spacing: -0.02em;
 }
+
 
 /*Hyperlinks*/
 a {
@@ -65,6 +69,7 @@ a:hover {
   color: var(--primary-hover);
 }
 
+
 /*Single-column container*/
 .stack-container {
   width: 100%;
@@ -74,6 +79,7 @@ a:hover {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
 }
+
 
 /*Navigation bar*/
 .site-header {
@@ -137,6 +143,7 @@ a:hover {
   margin: 0 auto 2.5rem auto;
 }
 
+
 /*Site content feed*/
 .feed-section {
   padding: 5rem 0;
@@ -189,6 +196,7 @@ a:hover {
   font-size: var(--fs-body);
   color: var(--text-main);
 }
+
 
 /*Members Gallery*/
 .member-section {
@@ -247,6 +255,7 @@ a:hover {
 .footer-links img {
     display:block;
 }
+
 
 /*Heavy button*/
 .btn-action {

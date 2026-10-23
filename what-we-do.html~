@@ -1,0 +1,63 @@
+<!--Developed by Iris Tapley, October 15th 2026. If, while altering, any questions arise, please contact me at will!-->
+<!--This document was made with the intention of popping up a lightweight & portable WRCC website while complying to modern web style conventions.-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> WRCC </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template.css">
+    <link rel="preload" href="media/WRCC-Logos/BlackTransparent@300x.png" as="image">
+    <link rel="preload" href="media/WRCC-Logos/MainOutlined@300x.png" as="image">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="site-header">
+      <div class="stack-container">
+	<div class ="nav-wrapper">
+ 	  <a href="index.html" class="nav-logo"></a>
+	  <ul class ="nav-links">
+	    <li><a href ="who-we-are.html">Who We Are</a></li>
+	    <li><a href ="#What-We-Do">What We Do</a></li>
+	    <li><a href ="#Resources">Resources</a></li>
+	    <li><a href ="#News">News</a></li>
+	    <li><a href ="#Events-Calendar">Events Calendar</a></li>
+	    <li><a href ="#Contact-Us">Contact Us</a></li>
+	<!--<li><a href ="about.html">About</a></li>
+	    <li><a href="#actions">Actions</a></li>
+	    <li><a href="#join">Join</a></li> -->
+	  </ul>
+	</div>
+      </div>
+    </header>
+    
+    <!-- BODY TEXT -->
+      <main class="feed-section" id="campaigns">
+    <div class="stack-container">
+      <article class="feed-item">
+	<p class="item-excerpt">
+	     The Waterloo Region Community Coalition seeks to be a space for building unity among the left and the working class. In the WRCC’s meetings, local leaders of member organizations come together regularly to strategize on how to properly address the class struggle taking place in our communities, bringing to the table their unique expertises, talents, community perspectives and experiences, and an overall commitment to transformative social and systemic change.<br><br>
+
+Using these insights, resources, and commitments from local and grassroots leaders, the WRCC aims to plan and support specific campaigns, actions, and events. The purpose of our activities is to demonstrate how different struggles on the Left authentically have more in common than may appear, and to prove that “Collective Action” is not merely a slogan, but a discipline that must be developed like any other skill when organizing during times of international uncertainty. 
+
+	  </p>
+      </article>
+      </div>
+      </main>
+
+      <!-- FOOTER -->
+    <footer>
+      <div class="stack-container">
+	<div class="site-footer">
+	  <p>&copy; 2026 Waterloo Region Community Coalition</p>
+	  <ul class="footer-links">
+     <li> <a href="https://www.instagram.com/communitycoalitionwr/"><img src="media/socials/instagram.png" height=50px></a></li>
+     <li> <a href="mailto:wrcommunitycoalition@gmail.com"><img src="media/socials/mail.png" height=25px></a></li>
+     </ul>
+      </div>
+    </div>
+    </footer>
+    
+  </body>
+</html>
