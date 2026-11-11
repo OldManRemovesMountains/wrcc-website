@@ -48,7 +48,7 @@ body {
 }
 
 
-/*Headers*/
+/*Header text*/
 h1, h2, h3 {
   color: #000000;
   font-weight: 800;
@@ -71,47 +71,44 @@ a:hover {
 
 
 /*Single-column container*/
-.stack-container {
-  width: 100%;
+.container {
   max-width: var(--reading-width);
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  margin: auto;
+  padding: 0rem 1.5rem;
 }
 
 
 /*Navigation bar*/
-.site-header {
-  background-color: --bg-light;
+header {
+  background-color: var(--bg-light);
   border-bottom: 1px solid var(--primary-color);
 }
 
-.nav-wrapper {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 75px;
 }
 
-.nav-links {
+header ul {
   display: flex;
   list-style: none;
   gap: 1.75rem;
 }
 
-.nav-links a {
+header ul a {
   color: var(--text-main);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
 }
 
-.nav-links a:hover {
+header ul a:hover {
   color: var(--primary-hover);
 }
 
-.nav-logo {
+.logo {
     display: inline-block;
     height: 100px;
     width: 143px;
@@ -123,20 +120,20 @@ a:hover {
 
 
 /*Hero banner*/
-.hero-stack {
+.hero {
   background-color: var(--bg-dark);
   color: #ffffff;
   padding: clamp(4rem, 10vw, 7rem) 0;
   text-align: center;
 }
 
-.hero-stack h1 {
+.hero h1 {
   color: #ffffff;
   font-size: var(--fs-hero-title);
   margin-bottom: 1.5rem;
 }
 
-.hero-stack p {
+.hero p {
   font-size: 1.25rem;
   opacity: 0.9;
   max-width: 600px;
@@ -144,93 +141,85 @@ a:hover {
 }
 
 
-/*Site content feed*/
-.feed-section {
+/* News Feed */
+main {
   padding: 5rem 0;
 }
 
-.feed-section h2 {
+main h2 {
   font-size: var(--fs-section-title);
   margin-bottom: 2.5rem;
   text-align: center;
 }
 
-.feed-item {
+main article {
   display: block;
-  padding: 2.5rem 0;
+  padding: 2.5rem 1.5rem;
   border-bottom: 1px solid var(--border-clean);
 }
 
-.feed-item:first-of-type {
+main article:first-of-type {
   padding-top: 0;
 }
 
-.feed-item:last-child {
-  border-bottom: none; 
+main article:last-child {
+  border-bottom: none;
 }
 
-.item-meta {
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-muted);
-  margin-bottom: 0.5rem;
-}
-
-.item-title {
+main article h3 {
   font-size: 1.45rem;
   margin-bottom: 0.75rem;
 }
 
-.item-title a {
-  color: #000000;
+main article h3 a {
+  color: #000;
   text-decoration: none;
 }
 
-.item-title a:hover {
+main article h3 a:hover {
   color: var(--primary-hover);
 }
 
-.item-excerpt {
+main article p {
   font-size: var(--fs-body);
   color: var(--text-main);
 }
 
 
-/*Members Gallery*/
-.member-section {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+/*Gallery*/
+.gallery {
+    padding: 3.8rem 0;
     text-align: center;
 }
 
-.member-title {
+.gallery h2 {
     font-size: var(--fs-section-title);
     margin-bottom: 2.5rem;
-    text-align: center;
 }
 
-.member-grid {
+.gallery ul {
     display: flex;
     flex-wrap: nowrap;
-    gap: 30px;
     align-items: center;
+    list-style: none;
 }
 
-.member-card {
+.gallery li {
+    flex: 1;
+}
+
+.gallery a {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 120px;
   padding: 15px;
-  background-color: --bg-light;
+  background-color: var(--bg-light);
   border-radius: 8px;
 }
 
-.member-logo {
+.gallery img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;  
@@ -238,27 +227,27 @@ a:hover {
 
 
 /*Footer*/
-.site-footer {
+footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer-links {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    gap: 0.75rem;
-    padding-left: 0;
+footer ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 0.75rem;
+  padding-left: 0;
 }
 
-.footer-links img {
-    display:block;
+footer img {
+    display: block;
 }
 
 
 /*Heavy button*/
-.btn-action {
+.action {
   display: inline-block;
   background-color: var(--primary-color);
   color: #ffffff !important; 
@@ -274,40 +263,39 @@ a:hover {
 }
 
 
-.btn-action:hover {
+.action:hover {
   background-color: var(--primary-hover);
   transform: translateY(-1px);
 }
 
 /*Mobile adjustments*/
 @media (max-width: 520px) {
-.nav-wrapper {
+header .container {
     flex-direction: column;
     justify-content: center;
     display: flex;
     gap: 1rem;
-    height: 150px;          
-    padding: 0.2rem 0;   
+    height: 150px;           
   }
 
-.nav-links {
+ header ul {
     gap: 2rem;
     justify-content: center;
-}
-
- .nav-links a {
-     font-size: 1rem;
-     letter-spacing: 0.05em;
  }
 
- .member-grid {
+ header ul a {
+     font-size: 1rem;
+     justify-content: center;
+  }
+
+ .gallery ul {
      flex-direction: column;
      width: max-content;
      max-width: 90%;
      margin: 0 auto;
- }
+  }
 
- .member-card {
+ .gallery a {
      width: 100px;
      height: 100px
  }
